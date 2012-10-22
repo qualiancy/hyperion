@@ -9,8 +9,8 @@ global.should = global.chai.should();
  * Chai Plugins
  */
 
-//global.chai.use(require('chai-spies'));
-//global.chai.use(require('chai-http'));
+global.chai.use(require('chai-spies'));
+global.chai.use(require('chai-http'));
 
 /*!
  * Import project
@@ -32,4 +32,6 @@ function req (name) {
  * Load unexposed modules for unit tests
  */
 
-global.__hyperion = {};
+global.__hyperion = {
+
+};

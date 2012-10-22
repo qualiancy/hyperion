@@ -5,6 +5,9 @@
   , "author": "Jake Luer <jake@qualiancy.com> (http://qualiancy.com)"
   , "license": "MIT"
   , "keywords": [
+        "rest"
+      , "restful"
+      , "http"
     ]
   , "repository": {
         "type": "git"
@@ -18,9 +21,14 @@
       "test": "mocha"
     }
   , "dependencies": {
+        "drip": "0.3.x"
+      , "facet": ">= 0.2.1"
+      , "tea": "0.1.x"
     }
   , "devDependencies": {
         "chai": "*"
+      , "chai-http": "*"
+      , "chai-spies": "*"
       , "mocha": "*"
     }
 }
