@@ -8,6 +8,11 @@ describe('application', function () {
     app.should.itself.respondTo('handle');
   });
 
+  it('has a hyperion version', function () {
+    var app = hyperion();
+    app.should.have.property('__hyperionVersion', hyperion.version);
+  });
+
   it('is an event emitter', function () {
     var app = hyperion()
       , single = chai.spy('single')
@@ -32,6 +37,11 @@ describe('application', function () {
     app.should.itself.respondTo('disabled');
   });
 
+  it('has correct default config', function () {
+    var app = hyperion();
+    app.get('env').should.equal(process.env.NODE_ENV);
+  });
+
   it('can be configured by node env', function () {
     var app = hyperion()
       , env = process.env.NODE_ENV // storing current
@@ -51,11 +61,6 @@ describe('application', function () {
 
     // resetting
     process.env.NODE_ENV = env; // resetting current
-  });
-
-  it('has correct default config', function () {
-    var app = hyperion();
-    app.get('env').should.equal(process.env.NODE_ENV);
   });
 
 });
