@@ -23,6 +23,7 @@
   , "dependencies": {
         "drip": "0.3.x"
       , "facet": ">= 0.2.1"
+      , "pauli": "0.0.x"
       , "tea": "0.1.x"
     }
   , "devDependencies": {
