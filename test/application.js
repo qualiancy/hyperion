@@ -1,40 +1,23 @@
 describe('application', function () {
 
-  it('can be created from main export', function () {
-    var app = hyperion();
-    app.should.be.a('function');
-    app.should.itself.respondTo('use');
-    app.should.itself.respondTo('configure');
-    app.should.itself.respondTo('handle');
-  });
-
   it('has a hyperion version', function () {
     var app = hyperion();
     app.should.have.property('__hyperionVersion', hyperion.version);
   });
 
-  it('is an event emitter', function () {
+  it('is an event emitter with "::" for delimer', function () {
     var app = hyperion()
       , single = chai.spy('single')
       , wildcard = chai.spy('wildcard')
-    app.should.itself.respondTo('on');
-    app.should.itself.respondTo('emit');
+
     app.on('test', single);
     app.on('hello::*', wildcard);
+
     app.emit('test');
     app.emit('hello::universe');
+
     single.should.have.been.called.once;
     wildcard.should.have.been.called.once;
-  });
-
-  it('has facet methods', function () {
-    var app = hyperion();
-    app.should.itself.respondTo('get');
-    app.should.itself.respondTo('set');
-    app.should.itself.respondTo('enable');
-    app.should.itself.respondTo('disable');
-    app.should.itself.respondTo('enabled');
-    app.should.itself.respondTo('disabled');
   });
 
   it('has correct default config', function () {
