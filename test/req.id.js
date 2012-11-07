@@ -1,18 +1,16 @@
 describe('req', function () {
-
-  describe('id', function () {
-
-    it('can be provided by header x-request-id', function (done) {
+  describe('.id', function () {
+    it('should reference an already existing x-request-id', function (done) {
       var app = hyperion()
         , spy = chai.spy(function (req, res) {
             req.should.have.header('x-request-id');
             req.should.have.property('id');
             req.id.should.equal('hello-universe');
 
-            // TODO: automatic handling of such things
-            res.writeHeader(200, { 'content-type': 'text/plain' });
-            res.write(req.id);
-            res.end();
+            res
+            .status(200)
+            .type('text')
+            .end(req.id);
           });
 
       app.use(spy);
@@ -31,17 +29,17 @@ describe('req', function () {
       });
     });
 
-    it('can be generate if not in header', function (done) {
+    it('should generate req.id if it does not exist', function (done) {
       var app = hyperion()
         , spy = chai.spy(function (req, res) {
             req.should.not.have.header('x-request-id');
             req.should.have.property('id');
             req.id.should.have.length(36);
 
-            // TODO: automatic handling of such things
-            res.writeHeader(200, { 'content-type': 'text/plain' });
-            res.write(req.id);
-            res.end();
+            res
+            .status(200)
+            .type('text')
+            .end(req.id);
           });
 
       app.use(spy);
@@ -56,7 +54,5 @@ describe('req', function () {
         done();
       });
     });
-
-  }); // id
-
+  });
 });
