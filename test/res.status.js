@@ -1,10 +1,10 @@
 describe('res', function () {
-  describe('.status()', function () {
-    it('should set the .statusCode', function (done) {
+  describe('.status(code)', function () {
+    it('should set the response .statusCode', function (done) {
       var app = hyperion();
 
       app.use(function (req, res) {
-        res.status(201);
+        res.status(201).end();
       });
 
       chai.request(app)
