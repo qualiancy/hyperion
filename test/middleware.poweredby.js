@@ -18,7 +18,7 @@ describe('middleware', function () {
       });
     });
 
-    it('can be set to custom string', function (done) {
+    it('should support custom string', function (done) {
       var app = hyperion();
 
       app.set('x-powered-by', 'The Universe');
@@ -38,7 +38,7 @@ describe('middleware', function () {
       });
     });
 
-    it('can be disabled', function (done) {
+    it('should support .disable', function (done) {
       var app = hyperion();
 
       app.disable('x-powered-by');
