@@ -1,6 +1,6 @@
-# hyperion
+# Hyperion [![Build Status](https://magnum.travis-ci.com/qualiancy/hyperion.png?token=LUUyssykZx7gJahodutp)](http://magnum.travis-ci.com/qualiancy/hyperion)
 
-> RESTful Services Architecture
+> HTTP Framework for high-densitity data-centric applications and services.
 
 #### Installation
 
