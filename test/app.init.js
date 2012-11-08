@@ -23,6 +23,12 @@ describe('app', function () {
     it('should have valid default config', function () {
       var app = hyperion();
       app.get('env').should.equal(process.env.NODE_ENV);
+      app.get('name').should.equal('application');
+    });
+
+    it('should support a different namespace', function () {
+      var app = hyperion('hyperion');
+      app.get('name').should.equal('hyperion');
     });
   });
 });
