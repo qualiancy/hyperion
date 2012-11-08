@@ -4,7 +4,7 @@ var STATUS_CODES = require('http').STATUS_CODES
 describe('errors', function () {
   it('should imported all http errors', function () {
     var codeKeys = Object.keys(STATUS_CODES)
-      , errorKeys = Object.keys(errors._specs)
+      , errorKeys = Object.keys(errors.errors)
     errorKeys.should.have.length(codeKeys.length);
   });
 
