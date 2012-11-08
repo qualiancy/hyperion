@@ -34,4 +34,5 @@ function req (name) {
 
 global.__hyperion = {
     util: req('util')
+  , errors: req('errors')
 };
