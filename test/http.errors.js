@@ -14,7 +14,7 @@ describe('errors', function () {
     }).should.throw(errors._proto, 'Internal Server Error');
   });
 
-  it.only('should be able to get the http status from an error', function () {
+  it('should be able to get the http status from an error', function () {
     var err = errors.create('internal server error')
       , json = err.toJSON();
     err.should.have.property('status', 500);
