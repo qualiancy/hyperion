@@ -14,10 +14,10 @@ describe('errors', function () {
     }).should.throw(errors._proto, 'Internal Server Error');
   });
 
-  it('should be able to get the http status from an error', function () {
+  it.only('should be able to get the http status from an error', function () {
     var err = errors.create('internal server error')
       , json = err.toJSON();
-    err.should.have.property('status', '500');
-    json.should.have.property('status', '500');
+    err.should.have.property('status', 500);
+    json.should.have.property('status', 500);
   });
 });
