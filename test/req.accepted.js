@@ -5,7 +5,12 @@ describe('req', function () {
 
       app.use(function (req, res) {
         req.accepted.should.be.an('array');
-        req.accepted.should.deep.equal([{ value: 'text/plain', quality: 1 }]);
+        req.accepted.should.deep.equal([{
+            value: 'text/plain'
+          , quality: 1
+          , type: 'text'
+          , subtype: 'plain'
+        }]);
 
         res
         .status(200)
