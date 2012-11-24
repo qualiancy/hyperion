@@ -21,12 +21,12 @@
       "test": "NODE_ENV=test mocha"
     }
   , "dependencies": {
-        "drip": "0.3.x"
+        "drip": "1.0.x"
       , "dragonfly": "0.3.x"
-      , "facet": ">= 0.2.1"
+      , "facet": "0.3.x"
       , "mime": "1.2.x"
       , "pauli": "0.0.x"
-      , "tea": "0.1.x"
+      , "tea-extend": "0.1.x"
     }
   , "devDependencies": {
         "chai": "*"
