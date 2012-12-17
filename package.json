@@ -21,17 +21,20 @@
       "test": "NODE_ENV=test mocha"
     }
   , "dependencies": {
-        "drip": "1.0.x"
+        "drip": "1.0.0"
       , "dragonfly": "0.3.x"
-      , "facet": "0.3.x"
+      , "facet": "0.3.0"
       , "mime": "1.2.x"
       , "pauli": "0.0.x"
-      , "tea-extend": "0.1.x"
+      , "sherlock": "1.0.0"
+      , "tea-extend": "0.2.0"
     }
   , "devDependencies": {
         "chai": "*"
       , "chai-http": "*"
       , "chai-spies": "*"
+      , "component": "*"
       , "mocha": "*"
+      , "mocha-phantomjs": "*"
     }
 }

@@ -1,0 +1,33 @@
+{
+    "name": "hyperion"
+  , "repo": "qualiancy/hyperion"
+  , "version": "0.0.0"
+  , "description": "RESTful Services Architecture"
+  , "license": "MIT"
+  , "keywords": [
+        "rest"
+      , "restful"
+      , "http"
+    ]
+  , "main": "lib/hyperion.browser.js"
+  , "scripts": [
+        "lib/hyperion.browser.js"
+
+      , "lib/browser/context.js"
+      , "lib/browser/proto.js"
+
+      , "lib/middleware/index.js"
+      , "lib/middleware/query.js"
+
+      , "lib/browser/middleware/index.js"
+      , "lib/browser/middleware/init.js"
+    ]
+  , "dependencies": {
+        "qualiancy/drip": "1.0.0"
+      , "qualiancy/facet": "0.3.0"
+      , "qualiancy/helios": "0.2.0"
+      , "qualiancy/sherlock": "1.0.0"
+      , "qualiancy/tea-extend": "0.2.0"
+    }
+  , "development": {}
+}
