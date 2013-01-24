@@ -12,20 +12,20 @@
   , "main": "lib/hyperion.browser.js"
   , "scripts": [
         "lib/hyperion.browser.js"
-
+      , "lib/version.js"
       , "lib/browser/context.js"
       , "lib/browser/proto.js"
-
       , "lib/middleware/index.js"
       , "lib/middleware/query.js"
-
       , "lib/browser/middleware/index.js"
       , "lib/browser/middleware/init.js"
     ]
   , "dependencies": {
-        "qualiancy/drip": "1.0.0"
+        "qualiancy/drip": "1.1.0"
       , "qualiancy/facet": "0.3.0"
       , "qualiancy/helios": "0.2.0"
+      , "qualiancy/hyperion-qs": "0.1.0"
+      , "qualiancy/hyperion-router": "0.1.1"
       , "qualiancy/sherlock": "1.0.0"
       , "qualiancy/tea-extend": "0.2.0"
     }

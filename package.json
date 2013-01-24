@@ -21,9 +21,11 @@
       "test": "NODE_ENV=test mocha"
     }
   , "dependencies": {
-        "drip": "1.0.0"
+        "drip": "1.1.0"
       , "dragonfly": "0.3.x"
       , "facet": "0.3.0"
+      , "hyperion-qs": "0.1.0"
+      , "hyperion-router": "0.1.1"
       , "mime": "1.2.x"
       , "pauli": "0.0.x"
       , "sherlock": "1.0.0"
