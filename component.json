@@ -25,7 +25,7 @@
       , "qualiancy/facet": "0.3.0"
       , "qualiancy/helios": "0.2.0"
       , "qualiancy/hyperion-qs": "0.1.0"
-      , "qualiancy/hyperion-router": "0.1.1"
+      , "qualiancy/hyperion-router": "0.1.2"
       , "qualiancy/sherlock": "1.0.0"
       , "qualiancy/tea-extend": "0.2.0"
     }
