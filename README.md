@@ -1,4 +1,4 @@
-# Hyperion [![Build Status](https://magnum.travis-ci.com/qualiancy/hyperion.png?token=LUUyssykZx7gJahodutp)](http://magnum.travis-ci.com/qualiancy/hyperion)
+# Hyperion 
 
 > HTTP Framework for high-densitity data-centric applications and services.
 
