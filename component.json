@@ -9,16 +9,16 @@
       , "restful"
       , "http"
     ]
-  , "main": "lib/hyperion.browser.js"
+  , "main": "lib/client/index.js"
   , "scripts": [
-        "lib/hyperion.browser.js"
-      , "lib/version.js"
-      , "lib/browser/context.js"
-      , "lib/browser/proto.js"
-      , "lib/middleware/index.js"
-      , "lib/middleware/query.js"
-      , "lib/browser/middleware/index.js"
-      , "lib/browser/middleware/init.js"
+        "lib/client/index.js"
+      , "lib/client/context.js"
+      , "lib/client/proto.js"
+      , "lib/client/middleware/index.js"
+      , "lib/client/middleware/init.js"
+      , "lib/common/version.js"
+      , "lib/common/middleware/index.js"
+      , "lib/common/middleware/query.js"
     ]
   , "dependencies": {
         "qualiancy/drip": "1.1.0"

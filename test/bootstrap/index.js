@@ -24,8 +24,8 @@ global.hyperion = require('../..');
 
 function req (name) {
   return process.env.hyperion_COV
-    ? require('../../lib-cov/node/' + name)
-    : require('../../lib/node/' + name);
+    ? require('../../lib-cov/server/' + name)
+    : require('../../lib/server/' + name);
 }
 
 /*!

@@ -1,3 +1,3 @@
 module.exports = process.env.hyperion_COV
-  ? require('./lib-cov/hyperion.node')
-  : require('./lib/hyperion.node');
+  ? require('./lib-cov/server/index')
+  : require('./lib/server/index');

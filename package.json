@@ -18,7 +18,7 @@
     }
   , "main": "./index"
   , "scripts": {
-      "test": "NODE_ENV=test mocha"
+      "test": "make test"
     }
   , "dependencies": {
         "drip": "1.1.0"
